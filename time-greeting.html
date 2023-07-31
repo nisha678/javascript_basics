@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Greetings</title>
+  </head>
+  <body>
+    <p style="font-size: 30px; color: red;">I am a time Greeter!</p>
+
+    <style>
+      .button {
+        height: 80px;
+        width: 160px;
+        color: white;
+        align-items: center;
+        font-size: 30px;
+        border-radius: 2px;
+        background-color: lightblue;
+        border-style: none;
+        cursor: pointer;
+
+      }
+    </style>
+
+    <button  class="button" onclick="greeter()">
+    Click Me!</button>
+    <div id="greeting" style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(143, 118, 194); padding:8px;">
+
+    </div>
+
+    <script>
+
+      const hour = new Date().getHours();
+      const greetMessage = document.getElementById("greeting");
+
+      function greeter() {
+
+        if (hour >= 6 && hour <12) {
+          greetMessage.textContent = "Good Morning!";
+          greetMessage.style.color = "yellow";
+        }
+        else if( hour >=13 && hour <17) {
+          greetMessage.textContent = "Good Afternoon!!";
+          greetMessage.style.color = "rgb(143, 118, 194)";
+        }
+        else  {
+          greetMessage.textContent =" Good Night!!!";
+          greetMessage.style.color = "rgb(143, 118, 194)" ;
+        }
+
+        greeter();
+
+      }
+
+    </script>
+  </body>
+</html>
