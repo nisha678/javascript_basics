@@ -1,0 +1,71 @@
+<!--Function Declaration Vs. Expression-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function Declaration Vs. Expression</title>
+  <h1>Function Declaration Vs. Expression</h1>
+  <style>
+    .div1 {
+      height: 400px;
+      width: 400px;
+      background-color: rgb(15, 15, 77);
+      color: white;
+      
+      
+    }
+    .div2 {
+      height: 400px;
+      width: 400px;
+      background-color: rgb(15, 15, 77);
+      color: white;
+      
+      
+    }
+  </style>
+  
+
+</head>
+<body>
+
+  <div class="div1"> <h2>Declaration</h2>
+    function calcAge(birthyear) {
+      return 2023 - birthyear;
+    }
+
+    const age = calcAge(1998);
+ </div>
+ <div class="div2">
+  <h2>Expression</h2>
+    const calcAge1 = function(birthyear) {
+      return 2023 - birthyear;
+
+    }
+    const age1 = calcAge1(1997);
+    console.log(age, age1);
+
+ </div>
+
+  <script>
+
+    //declaration
+    function calcAge(birthyear) {
+      return 2023 - birthyear;
+    }
+
+    const age = calcAge(1998);
+    //console.log(age);
+
+    //expression
+    const calcAge1 = function(birthyear) {
+      return 2023 - birthyear;
+
+    }
+    const age1 = calcAge1(1997);
+    console.log(age, age1);
+
+
+  </script>
+</body>
+</html>
