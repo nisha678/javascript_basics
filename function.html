@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      /*
+      function function1() {
+        console.log('hello');
+        console.log(2+2);
+      }
+      function1();
+      function1();
+      */
+/*
+      //deafult value of parameter - taxPercent =0.1
+      function calculateTax(cost, taxPercent = 0.1) {
+        console.log(taxPercent);
+        console.log(cost * taxPercent);
+      }
+
+      calculateTax( 2000, 0.2);
+      calculateTax(5000, );
+
+      ////////////Function Expression///////////////
+
+      const calcAge1= function(birthyear) {
+        return 2023 - birthyear;
+      }
+*/
+/*
+      ///////////////Arrow Function//////////////
+       const calcAge3 = birthyear => 2023 - birthyear;
+       const age3 =calcAge3(1999);
+       console.log(age3);
+
+      /////////////////// Arrow Func with more Parameter/////////
+      const yearsUntilRetirement = (birthyear, firstName) => {
+        const age= 2023- birthyear;
+        const retirement= 65 - age ;
+        //return retirement; //return explicitly
+        return `${firstName} will retire in ${retirement} years`;
+      }
+      console.log(yearsUntilRetirement(1998, 'Nisha' ));
+      console.log(yearsUntilRetirement(1977, 'Papa' ));
+*/
+/*
+      //////Fn calling other fn///////
+      function cutFruitPieces(fruit) {
+        return fruit * 4;
+      }
+
+      function fruitProcessor(apple, oranges){
+        const applePieces = cutFruitPieces(apple);
+        const oangePieces= cutFruitPieces(oranges);
+
+      const juice = `Juice with ${applePieces} pieces of apple & ${oangePieces} pieces of orange.`; 
+      return juice; 
+      
+      }
+      console.log(fruitProcessor(4, 6));
+
+*/
+
+      /////fn caaling a fn using prev eg//////
+      const calcAge= function(birthyear) {
+        return 2023 - birthyear;
+          
+      }
+      const yearsUntilRetirement = function (birthyear, firstName) 
+      {
+        const age = calcAge(birthyear);
+        const retirement= 65 - age ;
+
+        
+        if (retirement > 0) {
+          console.log(`${firstName} will retire in ${retirement} years`);
+          return retirement;
+        }
+        else {
+          console.log(`${firstName} has already retired `);
+          return -1;
+        }
+          
+      }
+      
+      console.log(yearsUntilRetirement(1950, 'mikwe' ));
+      console.log(yearsUntilRetirement(1999, 'Nsha' ));
+
+    
+
+    </script>
+  </body>
+</html>
