@@ -17,8 +17,8 @@
 
   <button onclick="
     //cartQuantity = cartQuantity + 2;
-    //cartQuantity += 2;
-    cartQuantity++;
+    cartQuantity += 2;
+    //cartQuantity++;
     console.log(`Cart Quantity : ${cartQuantity}`);
   " > +2</button>
 
@@ -35,7 +35,17 @@
   >Reset Cart</button>
 
   <script>
+
     let cartQuantity = 0;
+
+    if (cartQuantity === 10)
+    {
+      alert( `cart is full! : ${cartQuantity}`);
+    }
+    else {
+      console.log(`Cart Quantity : ${cartQuantity}`);
+    } 
+
   </script>
 </body>
 
