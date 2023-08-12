@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array</title>
+</head>
+<body>
+  <h1>ARRAYS</h1>
+  <script>
+/*
+    const friend1 = 'Micheal';
+    const friend2 = 'Steven';
+    const friend3 = 'Jacob' ;
+
+    const friends = ['Micheal', 'Steven', 'Jacob'];
+    console.log(friends);
+
+    ////using new keyword/////
+    const years = new Array(1998, 5879, 567, 4767, 6588);
+    432 
+
+    console.log(friends[0]);
+    console.log(friends[1]);
+    console.log(friends[2]);
+
+    console.log(friends.length);
+    console.log(friends[friends.length - 1]);
+
+    friends[1] = 'Jay'; //replacing an item arr using const
+    console.log(friends);
+
+    const firstName= 'Jacob';
+    const jacob= [firstName, 'Budhu', 2022- 1993, friends];
+    console.log(jacob);
+    console.log(jacob.length);
+
+    //exercise
+    const calcAge= function (birthyear) {
+      return 2023-  birthyear;
+    }
+    const year = [1999, 1995, 1993, 2003];
+
+    const age1= calcAge(year[0]);
+    const age2= calcAge(year[2]);
+    const age3 = calcAge(year[year.length -1 ]);
+    console.log(age1, age2, age3);
+*/
+/*
+    ///////////Array Operation///////
+    const friends= ['Micheal', 'Steven', 'Jacob'];
+    friends.push('Banish'); //pushing at the end
+    console.log(friends); //mutated original array
+    
+    friends.unshift('David'); //pushing at the begining 
+    console.log(friends);
+
+    friends.pop(); //pop happens from last only
+    console.log(friends);
+
+    friends.shift(); //delete element from first
+    console.log(friends); 
+    
+    console.log(friends.indexOf('Jacob'));// returns index no.
+    console.log(friends.indexOf('Nisha'));
+
+    console.log(friends.includes('Jacob')); //checks if included in array or not
+    console.log(friends.includes('Nisha'));
+
+    if(friends.includes('Jacob'));
+    {
+      console.log('Your have a friend called Jacob');
+    }
+*/
+/*
+    ///////objects in js defines key-vale pair///////
+    const nisha = {
+      firstName : 'Nisha',
+      lastName: 'Patar',
+      age: 2023 - 1998,
+      job: 'Student',
+      friends: ['Micheal', 'Steven', 'Jacob']   
+    };
+    console.log(nisha);
+
+    console.log(nisha.lastName); //dot notation
+    console.log(nisha['lastName']); //bracket notation 
+
+    const nameKey = 'Name';
+    console.log(nisha['first'+ nameKey]);
+    console.log(nisha['last' + nameKey]);
+*/
+    //console.log(nisha.'last' +nameKey);
+    ///above line cannot be executed as it doesnt work with dot notation
+/*
+    const interesedIn= prompt('what do you want to know about nisha? Choose between firstName, lastName, age, job, friends');
+   
+    if(nisha[interesedIn]) {
+      console.log(nisha[interesedIn]);
+    }
+    else{
+      console.log('Wrong Request! Choose between first name, last name, age, job, friendds ');
+    }
+
+    nisha.location= 'India';
+    nisha['youtube']= '@nini';
+    console.log(nisha);
+
+
+    const bf= 'Jacob';
+    console.log(`${nisha.firstName} has ${nisha.friends.length}friends, and her bf is called ${nisha.friends[2]}`);
+*/
+
+    const nisha = {
+      firstName : 'Nisha',
+      lastName: 'Patar',
+      birthyear: 1998,
+      job: 'Student',
+      friends: ['Micheal', 'Steven', 'Jacob'],
+      hasDriverLicense: false,
+      
+    //   calcAge: function(birthyear) {
+    //     return 2023 - birthyear;
+    //  } //calAge  holds a func value 
+    //};
+
+    //console.log(nisha.calcAge(1998));
+    //console.log(nisha['calcAge'](1998));
+
+    ///////this keyword//////////
+    //calcAge: function() {
+    //  console.log(this);
+    //  return 2023 - this.birthyear;
+    //}
+
+    calcAge: function() {
+      this.age = 2023 - this.birthyear;
+      return this.age;
+    },
+
+    //challenge
+    getSummary: function() {
+        return `${this.firstName} is a ${this.calcAge()} year old ${nisha.job}, and he has ${this,hasDriverLicense ? 'a' : 'no '} drivers license.`
+      
+
+    }
+  
+};
+
+
+  console.log(nisha.calcAge());
+  console.log(nisha.age);
+
+  console.log(nisha);
+
+  console.log(nisha.getSummary());
+  console.log(nisha.hasDriverLicense);
+
+
+ 
+
+
+    
+
+
+  </script>
+</body>
+</html>
