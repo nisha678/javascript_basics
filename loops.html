@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>loops</title>
+</head>
+<body>
+  <script>
+
+    // console.log('Lifting weight repetition 1');
+    // console.log('Lifting weight repetition 2');
+    // console.log('Lifting weight repetition 3');
+    // console.log('Lifting weight repetition 4');
+    // console.log('Lifting weight repetition 5');
+    // console.log('Lifting weight repetition 6');
+    // console.log('Lifting weight repetition 7');
+    // console.log('Lifting weight repetition 8');
+    // console.log('Lifting weight repetition 9');
+    // console.log('Lifting weight repetiti on 10');
+
+    //for loop keeps runing while condition is true//
+    // for(let rep = 1; rep <=10 ; rep++ ) {
+    //   console.log(`nisha is great ${rep}`);
+    // }
+
+    const nishaArray = [
+      'Nisha',
+      'Patar',
+      1998,
+      'Student',
+      ['Micheal', 'Steven', 'Jacob'],
+      false 
+    ];
+/*
+    const types= [];
+
+      for(let i=0; i <nishaArray.length ; i++) {
+        //reading nisha array
+        console.log(nishaArray[i], typeof nishaArray[i]);
+
+        //filling types array///
+        //types[i] =typeof nishaArray[i];
+        types.push(typeof nishaArray[i]);
+      }
+      console.log(types);
+*/
+/*
+      //calculating age using loop
+      const years = [1998, 1995, 1993, 2001];
+      const age=[];
+
+      for (let x=0; x < years.length; x++) 
+      {
+        age.push (2023 - years[x]);
+      }
+      console.log(age);
+*/
+/*
+      //continue and break///
+      console.log('ONLY STRINGS')
+      for( let i =0; i< nishaArray.length; i++) {
+        if(typeof nishaArray[i] !== 'string') continue;
+
+        console.log(nishaArray[i], typeof nishaArray[i]);
+      }
+      console.log('BREAK WITH NUMBER')
+      for( let i =0; i< nishaArray.length; i++) {
+        if(typeof nishaArray[i] === 'number') break;
+
+        console.log(nishaArray[i], typeof nishaArray[i]);
+      }
+*/
+      //LOOPONG BACKWARDS//////
+      // 0, 1, 2...4
+      //4, 3, 2... 0
+/*
+      for(let i= nishaArray.length - 1; i >= 0; i-- ){
+        console.log(i, nishaArray[i]);
+      }
+
+      //LOOP INSIDE LOOP//////
+      for( let exercise =1; exercise< 4; exercise++)
+      {
+        console.log(`STARTING EXCERCISE ${exercise}`);
+        for(let rep=1; rep < 6; rep++)
+        {
+          console.log(`Exercise ${exercise} :Lifting weight repetition ${rep}`)
+        }
+      }
+*/
+      //WHILE LOOP////
+      
+      let rep =  1;
+      while(rep <= 10) {
+        console.log(`Lifting weights reptition ${rep}`);
+        rep++;
+      }
+      //dice/////
+      let dice= Math.trunc(Math.random() *6) +1;
+        while(dice !== 6){
+        console.log(`You rolled a ${dice}`);
+        dice = Math.trunc(Math.random()*6) +1;
+        if( dice===6)
+        console.log('Loop is about to end');
+      }
+
+
+
+
+  </script>
+</body>
+</html>

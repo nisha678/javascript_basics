@@ -109,7 +109,7 @@
 
     const bf= 'Jacob';
     console.log(`${nisha.firstName} has ${nisha.friends.length}friends, and her bf is called ${nisha.friends[2]}`);
-*/
+*/ 
 
     const nisha = {
       firstName : 'Nisha',
@@ -140,9 +140,7 @@
 
     //challenge
     getSummary: function() {
-        return `${this.firstName} is a ${this.calcAge()} year old ${nisha.job}, and he has ${this,hasDriverLicense ? 'a' : 'no '} drivers license.`
-      
-
+        return `${this.firstName} is a ${this.calcAge()} year old ${nisha.job}, and he has ${this.hasDriverLicense ? 'a' : 'no '} drivers license.`
     }
   
 };
@@ -154,7 +152,20 @@
   console.log(nisha);
 
   console.log(nisha.getSummary());
-  console.log(nisha.hasDriverLicense);
+
+  /* //example of this in few lines//
+  const nisha = {
+      name: 'nisha patar',
+      age: 25,
+      job: 'student',
+    
+    na : function() {
+      return `${this.name} is ${this.age} y.o and is a ${this.job}`;
+    }
+  }
+  
+    console.log(nisha.na());
+  */
 
 
  

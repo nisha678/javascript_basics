@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Moving-Box</title>
+    <style>
+
+      .box1 {
+        display:  inline-block;
+        height: 350px;
+        width: 280px;
+        background-color: red;
+        padding: 30px;
+        
+
+      }
+      .box1 .box2:hover {
+        transform: translate(50% , 50%);
+        transition: all ease-in-out 0.6s;
+        background-color: blue;
+      }
+      
+      
+
+      .box2 {
+        height: 80px;
+        width: 70px;
+        background-color: yellow;
+        padding:30px;
+      }
+    </style>
+
+  <head>
+    <body style="padding:20px; align-items: center;">
+
+      <div class="box1"
+      >
+      <h1>box1</h1>
+      
+        
+      <div class="box2" > 
+      <h2>box2</h2>
+        
+    </div>
+      </div>
+
+    </body>
+</html>
