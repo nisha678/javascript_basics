@@ -46,6 +46,13 @@ const murHotel = {
     },
 };
 
+function remainder(x, y) {
+	var rem = x % y;
+	return rem;
+}
+
+console.log(remainder(3,8));
+/*
 ///////////////////////////////////////
 // String Methods Practice
 
